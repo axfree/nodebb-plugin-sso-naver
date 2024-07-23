@@ -7,19 +7,19 @@
 				<strong>Quick Start</strong>
 				<ol>
 					<li>
-						Create a <strong>New Project</strong> via the
-						<a href="https://code.google.com/apis/console/">API Manager <i class="fa fa-external-link"></i></a>
+						Create a <strong>New Application</strong> via the
+						<a href="https://developers.naver.com/apps/">NAVER Developers <i class="fa fa-external-link"></i></a>
 					</li>
 					<li>
-						From the "Credentials" page, create a new "OAuth Client ID". (<a data-action="help-credentials" href="{config.relative_path}/plugins/nodebb-plugin-sso-google/images/credentials.png"><i class="fa fa-question-circle"></i> Where is this page?</a>)
+						From the "Credentials" page, create a new "OAuth Client ID". (<a data-action="help-credentials" href="{config.relative_path}/plugins/nodebb-plugin-sso-naver/images/credentials.png"><i class="fa fa-question-circle"></i> Where is this page?</a>)
 						<ul>
 							<li>The "Application Type" is "Web application"</li>
 							<li>"Name" can be anything. Perhaps "NodeBB SSO" will suffice.</li>
 							<li>"Authorized Javascript origins" can be left empty</li>
 							<li>
-								The "Authorised Redirect URI" is your NodeBB's URL with `/auth/google/callback` appended to it.
+								The "Authorised Redirect URI" is your NodeBB's URL with `/auth/naver/callback` appended to it.
 								<ul>
-									<li>Our best guess for this site is <code>{baseUrl}/auth/google/callback</code></li>
+									<li>Our best guess for this site is <code>{baseUrl}/auth/naver/callback</code></li>
 									<li>When you enter this value into the text field, be sure to hit <code>Enter</code> to submit the URL before saving</li>
 								</ul>
 							</li>
@@ -30,8 +30,8 @@
 						<ul>
 							<li>Use environment variables
 								<ul>
-									<li><code>export SSO_GOOGLE_CLIENT_ID='Client ID'</code></li>
-									<li><code>export SSO_GOOGLE_CLIENT_SECRET='Client Secret'</code></li>
+									<li><code>export SSO_NAVER_CLIENT_ID='Client ID'</code></li>
+									<li><code>export SSO_NAVER_CLIENT_SECRET='Client Secret'</code></li>
 								</ul>
 							</li>
 							<li>Use form below (this behavior overrides the environment variables)</li>
@@ -40,7 +40,7 @@
 					<li>Save and restart NodeBB via the ACP Dashboard</li>
 				</ol>
 			</div>
-			<form role="form" class="sso-google-settings">
+			<form role="form" class="sso-naver-settings">
 				<div class="mb-3">
 					<label for="app_id">Client ID</label>
 					<input type="text" name="id" title="Client ID" class="form-control input-lg" placeholder="Client ID">

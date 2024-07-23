@@ -1,8 +1,8 @@
 {
-	"id": "nodebb-plugin-sso-google",
-	"name": "NodeBB Google SSO",
-	"description": "NodeBB Plugin that allows users to login/register via their Google account.",
-	"url": "https://github.com/julianlam/nodebb-plugin-sso-google",
+	"id": "nodebb-plugin-sso-naver",
+	"name": "NodeBB Naver SSO",
+	"description": "NodeBB Plugin that allows users to login/register via their Naver account.",
+	"url": "https://github.com/axfree/nodebb-plugin-sso-naver",
 	"library": "./library.js",
 	"templates": "templates",
 	"hooks": [
@@ -15,6 +15,7 @@
 		{ "hook": "filter:user.whitelistFields", "method": "appendUserHashWhitelist" }
 	],
 	"modules": {
-		"../admin/plugins/sso-google.js": "static/lib/admin.js"
-	}
+		"../admin/plugins/sso-naver.js": "static/lib/admin.js"
+	},
+	"languages": "languages"
 }
